@@ -24,7 +24,7 @@ public:
   // Construct a new Lane Keeping System object
   LaneKeepingSystem();
   // Destroy the Lane Keeping System object
-  virutal ~LaneKeepingSystem();
+  virtual ~LaneKeepingSystem();
   // Running Lane Keeping System Algorithm
   void run();
   // Set parameters from config file
