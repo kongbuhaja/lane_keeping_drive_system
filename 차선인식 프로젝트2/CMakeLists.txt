@@ -4,7 +4,6 @@ project(lane_keeping_system)
 set (OpenCV_DIR /usr/share/OpenCV)
 
 find_package(catkin REQUIRED COMPONENTS
-  OpenCV
   roscpp
   sensor_msgs
   std_msgs
@@ -12,7 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 find_package(yaml-cpp REQUIRED)
-# find_package(OpenCV 4.5.5 REQUIRED PATHS ~/OpenCV4/install/lib/cmake/opencv4)
+find_package(OpenCV 4.5.5 REQUIRED PATHS ~/OpenCV4/install/lib/cmake/opencv4)
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 
