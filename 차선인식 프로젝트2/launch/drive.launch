@@ -1,5 +1,0 @@
-<launch>
-    <node name="Lane_Keeping_System" pkg="lane_keeping_system" type="lane_keeping_system_node" output="screen"/>
-    <param name="config_path" type="str" value="$(find lane_keeping_system)/config/config.yaml"/>
-    <node name="rosbag" pkg="rosbag" type="play" args="$(find lane_keeping_system)/src/track.bag"/>
-</launch>
