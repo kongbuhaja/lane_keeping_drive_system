@@ -10,7 +10,7 @@ project(lane)
 find_package(catkin REQUIRED COMPONENTS
   cv_bridge
   roscpp
-  #xycar_msgs
+#xycar_msgs
   std_msgs
   message_generation
 )
