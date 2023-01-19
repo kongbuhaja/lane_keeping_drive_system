@@ -1,0 +1,54 @@
+LIDAR:
+  #Start degree of Lidar(Left handed)
+  LIDAR_START_DEGREE: 350
+  #End degree of Lidar(Right handed)
+  LIDAR_END_DEGREE: 110 
+  #Maxinum degree of Lidar (Mininmum is 0)
+  LIDAR_MAX_DEGREE: 505 
+  #Required minimum number of dots for an object
+  LIDAR_OBJECT_MIN_SIZE: 6
+  #Required minimum distance of meters of an object
+  LIDAR_MINIMUM_DISTANCE: 0.3f
+  #Required maximum distance of meters of an object
+  LIDAR_MAXIMUM_DISTANCE: 1.f
+
+  STEERING_TOTAL_NUMBER: 40
+
+XYCAR:
+  START_SPEED: 1.0
+  MAX_SPEED: 30.0
+  MIN_SPEED: 7.0
+  SPEED_CONTROL_THRESHOLD: 15.0
+  ACCELERATION_STEP: 1.0
+  DECELERATION_STEP: 1.0
+
+PID:
+  P_GAIN: 0.12
+  I_GAIN: 0.0
+  D_GAIN: 0.019
+
+CANNY:
+  LOW_THRESHOLD: 150
+  HIGH_THRESHOLD: 250
+
+# MOVING_AVERAGE_FILTER:
+#   SAMPLE_SIZE: 30
+
+# TOPIC:
+#   PUB_NAME: /xycar_motor
+#   SUB_NAME: /usb_cam/image_raw/
+#   QUEUE_SIZE: 1
+
+# HOUGH:
+#   ABS_SLOPE_RANGE: 10.0
+#   THRESHOLD: 40
+#   MIN_LINE_LENGTH: 35
+#   MAX_LINE_GAP: 10
+
+# IMAGE:
+#   WIDTH: 640
+#   HEIGHT: 480
+#   ROI_START_HEIGHT: 340
+#   ROI_HEIGHT: 40
+
+# DEBUG: true
